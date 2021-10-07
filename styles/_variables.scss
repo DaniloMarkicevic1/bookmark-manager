@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+// colors
+$colors: (
+    white: #ffffff,
+    rgbaWhite: rgba(255, 255, 255, 0.15),
+    blue: #5267df,
+    redish: #fa5959,
+    darkBlue: #242a45,
+    rgbaDarkBlue: rgba(36, 42, 69, 0.95),
+    grey: #9194a2,
+);
+
+$fontFamily: Rubik, sans-serif;
+$font: (
+    size: (
+        xxl: 30px,
+        xl: 24px,
+        l: 20px,
+        regular: 18px,
+        m: 15px,
+        b: 14px,
+        s: 13px,
+        xs: 12px,
+        xxs: 10px,
+    ),
+    weight: (
+        regular: 400,
+        medium: 500,
+    ),
+    lineHeight: (
+        xxl: 52px,
+        xl: 40px,
+        lxx: 32px,
+        lx: 30px,
+        l: 28px,
+        m: 25px,
+        ms: 24px,
+        s: 17px,
+        xs: 12px,
+    ),
+    letterSpacing: (
+        xl: 4.6px,
+        l: 2.31px,
+        m: 1.7px,
+        s: 0.5px,
+        xs: 0.25px,
+    ),
+);

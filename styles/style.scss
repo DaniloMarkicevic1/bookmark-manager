@@ -1,0 +1,96 @@
+@use './variables' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    body {
+        font-family: $fontFamily;
+        .header {
+            .topNav {
+                position: absolute;
+                padding: 40px 32px 0px;
+                width: 100%;
+                height: 100%;
+                div {
+                    padding: 0 0 40px 0;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+            .hide {
+                transition: ease-in 0.5s;
+                div {
+                    .close {
+                        display: none;
+                    }
+                }
+                ul {
+                    display: none;
+                }
+            }
+            .show {
+                transition: ease-in 0.5s;
+                background-color: map-get($colors, rgbaDarkBlue);
+                overflow: none;
+                div {
+                    .bookmark {
+                        g {
+                            path {
+                                fill: map-get($colors, white);
+                            }
+                            g {
+                                fill: white;
+                                circle {
+                                    fill: map-get($colors, white);
+                                }
+                                path {
+                                    fill: map-get($colors, darkBlue);
+                                }
+                            }
+                        }
+                    }
+                    .burger {
+                        display: none;
+                    }
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    li {
+                        text-transform: uppercase;
+                        padding: 24px 0;
+                        border-top: 1px solid map-get($colors, rgbaWhite);
+                        text-align: center;
+                        list-style-type: none;
+                        font-size: map-get($font, size, l);
+                        line-height: map-get($font, lineHeight, s);
+                        letter-spacing: map-get($font, letterSpacing, l);
+                        a {
+                            text-decoration: none;
+                            color: map-get($colors, white);
+                        }
+                        button {
+                            text-transform: uppercase;
+                            background-color: transparent;
+                            color: map-get($colors, white);
+                            padding: 16px 121px 15px 118px;
+                            border: 2px solid map-get($colors, white);
+                            border-radius: 5px;
+                            font-family: $fontFamily;
+                            font-size: map-get($font, size, l);
+                            font-weight: map-get($font, weight, medium);
+                            line-height: map-get($font, lineHeight, s);
+                            letter-spacing: map-get($font, letterSpacing, l);
+                        }
+                    }
+                }
+            }
+        }
+        main {
+            padding-top: 144px;
+        }
+    }
+}

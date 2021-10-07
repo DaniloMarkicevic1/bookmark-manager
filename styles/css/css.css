@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  font-family: Rubik, sans-serif;
+}
+* body .header .topNav {
+  position: absolute;
+  padding: 40px 32px 0px;
+  width: 100%;
+  height: 100%;
+}
+* body .header .topNav div {
+  padding: 0 0 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+* body .header .hide {
+  transition: ease-in 0.5s;
+}
+* body .header .hide div .close {
+  display: none;
+}
+* body .header .hide ul {
+  display: none;
+}
+* body .header .show {
+  transition: ease-in 0.5s;
+  background-color: rgba(36, 42, 69, 0.95);
+  overflow: none;
+}
+* body .header .show div .bookmark g path {
+  fill: #ffffff;
+}
+* body .header .show div .bookmark g g {
+  fill: white;
+}
+* body .header .show div .bookmark g g circle {
+  fill: #ffffff;
+}
+* body .header .show div .bookmark g g path {
+  fill: #242a45;
+}
+* body .header .show div .burger {
+  display: none;
+}
+* body .header .show ul {
+  display: flex;
+  flex-direction: column;
+}
+* body .header .show ul li {
+  text-transform: uppercase;
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 17px;
+  letter-spacing: 2.31px;
+}
+* body .header .show ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+* body .header .show ul li button {
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 16px 121px 15px 118px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  font-family: Rubik, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 2.31px;
+}
+* body main {
+  padding-top: 144px;
+}
+
+/*# sourceMappingURL=css.css.map */
